@@ -10,4 +10,9 @@ class EmployeeTax extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+    public function tax()
+    {
+        return $this->belongsTo(Tax::class, 'tax_id');
+    }
 }

@@ -17,11 +17,10 @@
                 <div class="submenu">
                     <ul class="submenu-item">
 
-                        <li class="nav-item"><a class="nav-link"
-                                href="{{ route('admin.departments.index') }}">Department</a>
+                        <li class="nav-item"><a class="nav-link" href="#">Department</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin.employees.index') }}">Employee
+                            <a class="nav-link" href="#">Employee
                                 list</a>
                         </li>
                         <li>
@@ -37,11 +36,10 @@
                 <div class="submenu">
                     <ul class="submenu-item">
 
-                        <li class="nav-item"><a class="nav-link"
-                                href="{{ route('admin.schedules.index') }}">Schedules</a>
+                        <li class="nav-item"><a class="nav-link" href="#">Schedules</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin.attendance') }}">
+                            <a class="nav-link" href="#">
                                 Attendance
                             </a>
                         </li>
@@ -50,13 +48,13 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="{{ route('admin.payroll') }}">
+                <a class="nav-link active" href="#">
                     <i class="link-icon" data-feather="calendar"></i>
                     <span class="menu-title">Payroll</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="{{ route('admin.users') }}">
+                <a class="nav-link active" href="#">
                     <i class="link-icon" data-feather="user"></i>
                     <span class="menu-title">Users</span>
                 </a>
@@ -70,11 +68,11 @@
                 <div class="submenu">
                     <ul class="submenu-item">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin.deduction.index') }}">Deductions</a>
+                            <a class="nav-link" href="#">Deductions</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.tax.index') }}">Tax</a>
+                        <li class="nav-item"><a class="nav-link" href="#">Tax</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="pages/email/read.html">Profile</a>
+                        <li class="nav-item"><a class="nav-link" href="#">Profile</a>
                         </li>
 
                     </ul>

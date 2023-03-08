@@ -1,13 +1,5 @@
 <?php
 
-use App\Http\Controllers\Admin\AttendanceController;
-use App\Http\Controllers\Admin\DeductionController;
-use App\Http\Controllers\Admin\DepartmentController;
-use App\Http\Controllers\Admin\EmployeeController;
-use App\Http\Controllers\Admin\PayrollController;
-use App\Http\Controllers\Admin\ScheduleController;
-use App\Http\Controllers\Admin\TaxController;
-use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,14 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('admin.dashboard.index');
+    return view('login');
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
-    Route::get('users', [UserController::class, 'index'])->name('users');
-    Route::get('users/edit/{id}', [UserController::class, 'edit'])->name('users.edit');
-    Route::patch('users/update', [UserController::class, 'update'])->name('users.update');
-    Route::post('users', [UserController::class, 'store']);
-    Route::delete('users', [UserController::class, 'delete']);
-
+    Route::get('dashboard', function () {
+        return view('admin.dashboard.index');
+    });
 });

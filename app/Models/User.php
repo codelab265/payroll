@@ -56,11 +56,11 @@ class User extends Authenticatable
 
     public function employee_deduction()
     {
-        return $this->hasMany(EmployeeDeduction::class, 'user_id');
+        return $this->hasMany(EmployeeDeduction::class, 'user_id')->with('deduction');
     }
 
     public function employee_tax()
     {
-        return $this->hasMany(EmployeeTax::class, 'user_id');
+        return $this->hasMany(EmployeeTax::class, 'user_id')->with('tax');
     }
 }

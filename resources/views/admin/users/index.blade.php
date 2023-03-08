@@ -69,7 +69,7 @@
 
     @endsection
     @push('scripts')
-        <script>
+        {{-- <script>
             $(document).ready(function() {
                 var table;
                 loadTable();
@@ -212,5 +212,5 @@
 
                 })
             });
-        </script>
+        </script> --}}
     @endpush
