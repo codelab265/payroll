@@ -32,13 +32,4 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::post('users', [UserController::class, 'store']);
     Route::delete('users', [UserController::class, 'delete']);
 
-    Route::resource('deduction', DeductionController::class);
-    Route::resource('departments', DepartmentController::class);
-    Route::resource('schedules', ScheduleController::class);
-    Route::resource('employees', EmployeeController::class);
-    Route::get('attendance', [AttendanceController::class, 'index'])->name('attendance');
-    Route::get('attendance/create', [AttendanceController::class, 'create'])->name('attendance.create');
-    Route::post('attendance/create', [AttendanceController::class, 'store']);
-    Route::resource('tax', TaxController::class);
-    ROute::get('payroll', [PayrollController::class, 'index'])->name('payroll');
 });
